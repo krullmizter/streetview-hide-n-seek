@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <title>Streetview Hide 'n Seek</title>
 </head>
 <body>
@@ -39,14 +40,15 @@
         <main>
             <div class="map">
                 <iframe
+                    id="iframe-map"
                     width="600"
                     height="450"
                     style="border:0"
                     loading="lazy"
                     allowfullscreen
                     referrerpolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDVUPUHXWIPljsDHlBlf7e92GF9Xlr39yc
-    &q=Space+Needle,Seattle+WA">
+                    src='
+                        '>
                 </iframe>
             </div>
         </main>
