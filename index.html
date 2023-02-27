@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+    <title>Streetview Hide 'n Seek</title>
+</head>
+<body>
+    <content>
+        <header>
+            <div>
+                <h1>Welcome to Streetview Hide 'n Seek</h1>
+                <p>
+                    The goal is to find a set amount of charaters, hidden across the map below, as fast as possible.
+                    <br />
+                    You have a dial which tells you if you are getting closer (hotter), or further away (colder), from a hidden charater. 
+                    <br />
+                    You must click on the found hidden charater to move on to the next one.
+                    <br />
+                    You may choose the difficuly below, your time of completion will be added to the leaderboard.
+                </p>
+            </div>
+
+            <div>
+                <div class="timer">00:00:00</div>
+                <select class="difficulty" id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="normal">Normal</option>
+                    <option value="hard">Hard</option>
+                </select>
+    
+                <input type="button" value="Play">
+            </div>
+        </header>
+
+        <main>
+            <div class="map">
+                <iframe
+                    width="600"
+                    height="450"
+                    style="border:0"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDRKySipDVG2XLjLTuAFlXUk78enknmSFM
+    &q=Space+Needle,Seattle+WA">
+                </iframe>
+            </div>
+        </main>
+            
+        <footer>
+            <div>
+                <p>Made by <a href="https://github.com/krullmizter" target="_blank">Samuel Granvik</a> &#169; &#174;</p>
+            </div>
+        </footer>
+    </content>
+</body>
+</html>
