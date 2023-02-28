@@ -1,17 +1,32 @@
+let panorama;
+
 function init() {
-    function getRandomInRange(from, to) {
-        return (Math.random() * (to - from) + from).toFixed(6) * 1;
+    function randomCords() {
+        const cordinates = {
+            lat: 0,
+            lng: 0,
+        };
+
+        cordinates.lat = (Math.random() * (-90, 90) + 90).toFixed(6) * 1;
+        cordinates.lng = (Math.random() * (-180, 180) + 180).toFixed(6) * 1;
+        
+        return cordinates;
     }
 
-    const latitude  = getRandomInRange(-90, 90);
-    const longitude = getRandomInRange(-180, 180);
+    initialCords = randomCords();
 
-    console.log('lat:', latitude, 'long:', longitude)
+    console.log('Initial cordinates:', initialCords);
 
-    const panorama = new google.maps.StreetViewPanorama(
+    const map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: initialCords.lat, lng: initialCords.lng },
+        zoom: 18,
+        streetViewControl: false,
+    });
+
+    /*const panorama = new google.maps.StreetViewPanorama(
         document.getElementById("map"),
         {
-            position: { lat: 42.345573, lng: -71.098326 },
+            position: { lat: initialCords.lat, lng: initialCords.lng },
             addressControlOptions: {
                 position: google.maps.ControlPosition.BOTTOM_CENTER,
             },
@@ -19,7 +34,7 @@ function init() {
             panControl: false,
             enableCloseButton: false,
         }
-    );
+    );*/
 }
 
 window.init = init;
