@@ -26,7 +26,8 @@ span,
 h1,
 h2,
 h3 {
-    color: var(--white)
+    color: var(--white);
+    margin: 0;
 }
 
 a {
@@ -36,6 +37,15 @@ a {
 
 a:hover {
     color: var(--accent);
+}
+
+header > div:first-child {
+    padding: 2.5% 0;
+    text-align: center;
+}
+
+.timer {
+    text-align: center;
 }
 
 content {
