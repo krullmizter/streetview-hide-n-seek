@@ -14,11 +14,16 @@ content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+}
+
+header,
+footer {
     padding: 5%;
 }
 
-#street-view,
 #map {
     height: 100%;
+    min-height: 500px;
     width: 100%;
 }
