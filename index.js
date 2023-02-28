@@ -17,7 +17,7 @@ function play() {
     console.log(difficulty);
 }
 
-function initMap() {
+function init() {
     initialCords = randomCords();
 
     console.log('Initial cordinates:', initialCords);
@@ -31,4 +31,4 @@ function initMap() {
     });
 }
 
-window.initMap = initMap;
+window.init = init;
