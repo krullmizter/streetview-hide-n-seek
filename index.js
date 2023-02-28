@@ -17,18 +17,20 @@ function play() {
     console.log(difficulty);
 }
 
-function init() {
-    initialCords = randomCords();
-
-    console.log('Initial cordinates:', initialCords);
-
-    const astorPlace = { lat: 40.729884, lng: -73.990988 };
-
-    const map = new google.maps.Map(document.getElementById('map'), {
-        center: astorPlace,
-        zoom: 18,
-        streetViewControl: false,
-    });
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.031 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
 }
 
-window.init = init;
+window.initMap = initMap;
