@@ -17,7 +17,8 @@ content {
     padding: 5%;
 }
 
-#street-view {
+#street-view,
+#map {
     height: 100%;
     width: 100%;
 }

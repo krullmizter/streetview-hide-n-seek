@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./index.css">
-
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="./index.js"></script>
 
     <title>Streetview Hide 'n Seek</title>
@@ -39,9 +40,7 @@
             </div>
         </header>
 
-        <main>
-            <div id="street-view"></div>
-        </main>
+        <div id="map"></div>
             
         <footer>
             <div>
@@ -49,6 +48,6 @@
             </div>
         </footer>
     </content>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVUPUHXWIPljsDHlBlf7e92GF9Xlr39yc&callback=initialize&v=weekly" defer></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVUPUHXWIPljsDHlBlf7e92GF9Xlr39yc&callback=init&v=weekly" defer></script>
 </body>
 </html>

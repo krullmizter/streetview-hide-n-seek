@@ -1,6 +1,6 @@
-let panorama;
+/*let panorama;
 
-function initialize() {
+function initStreetview() {
     function getRandomInRange(from, to) {
         return (Math.random() * (to - from) + from).toFixed(6) * 1;
     }
@@ -17,4 +17,21 @@ function initialize() {
     );
 }
 
-window.initialize = initialize;
+window.initStreetview = initStreetview;*/
+
+function init() {
+  const panorama = new google.maps.StreetViewPanorama(
+    document.getElementById("map"),
+    {
+      position: { lat: 42.345573, lng: -71.098326 },
+      addressControlOptions: {
+        position: google.maps.ControlPosition.BOTTOM_CENTER,
+      },
+      linksControl: false,
+      panControl: false,
+      enableCloseButton: false,
+    }
+  );
+}
+
+window.init = init;
