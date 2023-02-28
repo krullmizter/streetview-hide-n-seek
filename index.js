@@ -6,7 +6,7 @@ function init() {
     const latitude  = getRandomInRange(-90, 90);
     const longitude = getRandomInRange(-180, 180);
 
-    console.log(latitude, longitude)
+    console.log('lat:', latitude, 'long:', longitude)
 
     const panorama = new google.maps.StreetViewPanorama(
         document.getElementById("map"),
