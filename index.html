@@ -28,20 +28,27 @@
                 </p>
             </div>
 
+            <div class="timer">
+                <h3>Timer</h3>
+                <div class="timer">00:00:00</div>
+            </div>
+
             <div class="settings">
                 <div>
-                    <div class="timer">00:00:00</div>
+                    <h3>Difficulty</h3>
+
                     <select class="difficulty" id="difficulty">
-                        <option value="easy">Easy</option>
-                        <option value="normal">Normal</option>
-                        <option value="hard">Hard</option>
+                        <option value="3">Easy</option>
+                        <option value="5">Normal</option>
+                        <option value="10">Hard</option>
                     </select>
                 </div>
-                <input type="button" value="Play">
+                
+                <input type="button" value="Play" onclick="play()">
             </div>
         </header>
 
-        <div id="map"></div>
+        <main id="map"></main>
             
         <footer>
             <div>

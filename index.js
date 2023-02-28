@@ -1,5 +1,3 @@
-let panorama;
-
 function init() {
     function randomCords() {
         const cordinates = {
@@ -35,6 +33,14 @@ function init() {
             enableCloseButton: false,
         }
     );*/
+}
+
+function play() {
+    difficulty = document.getElementById('difficulty').value;
+    
+    console.log(difficulty);
+
+    
 }
 
 window.init = init;
